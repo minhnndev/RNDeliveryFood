@@ -81,7 +81,9 @@ const CustomDrawerContent = ({navigation, selected}) => {
             style={{width: 48, height: 48, borderRadius: SIZES.radius}}
           />
           <View style={{marginLeft: SIZES.radius}}>
-            <Text style={{color: COLORS.white, ...FONTS.h3}}>Profile name</Text>
+            <Text style={{color: COLORS.white, ...FONTS.h3, fontWeight: '500'}}>
+              {dummyData.myProfile.name}
+            </Text>
             <Text style={{color: COLORS.white, ...FONTS.body4}}>
               View your profile
             </Text>
