@@ -8,7 +8,6 @@ const MainLayout = () => {
   const progress = useDrawerProgress();
 
   const {width} = useWindowDimensions();
-  console.log(progress.value);
 
   const animatedStyle = useAnimatedStyle(() => ({
     transform: [
