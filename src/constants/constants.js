@@ -5,6 +5,7 @@ const screens = {
   cart: 'Cart',
   favourite: 'Favourite',
   notification: 'Notification',
+  mywallet: 'My Wallet',
 };
 
 const bottom_tabs = [
