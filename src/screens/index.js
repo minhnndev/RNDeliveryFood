@@ -1,28 +1,25 @@
 import MainLayout from './MainLayout';
 
-// Home
+// Application
 import Home from './Home/Home';
-
-// Search
 import Search from './Search/Search';
-
-// Cart
 import CartTab from './Cart/CartTab';
-
-// Favourite
 import Favourite from './Favourite/Favourite';
-
-// Notification
 import Notification from './Notification/Notification';
+import FoodDetail from './Food/FoodDetail';
+import Checkout from './Cart/Checkout';
+import MyCart from './Cart/MyCart';
+import Success from './Cart/Success';
+import AddCard from './Card/AddCard';
+import MyCard from './Card/MyCard';
+import DeliveryStatus from './Delivery/DeliveryStatus';
+import Map from './Delivery/Map';
 
+// Authentication
 import OnBoarding from './OnBoarding/OnBoarding';
-
 import SignIn from './Authentication/SignIn';
-
 import SignUp from './Authentication/SignUp';
-
 import ForgotPassword from './Authentication/ForgotPassword';
-
 import Otp from './Authentication/Otp';
 
 export {
@@ -40,4 +37,12 @@ export {
   CartTab,
   Favourite,
   Notification,
+  FoodDetail,
+  Checkout,
+  MyCart,
+  Success,
+  AddCard,
+  MyCard,
+  DeliveryStatus,
+  Map,
 };
