@@ -15,4 +15,29 @@ import Favourite from './Favourite/Favourite';
 // Notification
 import Notification from './Notification/Notification';
 
-export {MainLayout, Home, Search, CartTab, Favourite, Notification};
+import OnBoarding from './OnBoarding/OnBoarding';
+
+import SignIn from './Authentication/SignIn';
+
+import SignUp from './Authentication/SignUp';
+
+import ForgotPassword from './Authentication/ForgotPassword';
+
+import Otp from './Authentication/Otp';
+
+export {
+  //AuthStack,
+  OnBoarding,
+  SignIn,
+  SignUp,
+  ForgotPassword,
+  Otp,
+
+  //AppStack,
+  MainLayout,
+  Home,
+  Search,
+  CartTab,
+  Favourite,
+  Notification,
+};

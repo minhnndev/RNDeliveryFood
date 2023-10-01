@@ -2,14 +2,15 @@ import {Dimensions} from 'react-native';
 const {width, height} = Dimensions.get('window');
 
 export const COLORS = {
-  primary: '#FF6C44',
-  transparentPrimray: 'rgba(227, 120, 75, 0.4)',
+  primary: '#FF6C44', //orange
+  transparentPrimary: 'rgba(227, 120, 75, 0.4)',
   orange: '#FFA133',
   lightOrange: '#FFA133',
   lightOrange2: '#FDDED4',
   lightOrange3: '#FFD9AD',
   green: '#27AE60',
   red: '#FF1717',
+  red2: '#FF6C44',
   blue: '#0064C0',
   darkBlue: '#111A2C',
   darkGray: '#525C67',
@@ -24,7 +25,8 @@ export const COLORS = {
   black: '#000000',
 
   transparent: 'transparent',
-  transparentBlack1: 'rgba(0, 0, 0, 0.2)',
+  transparentWhite1: 'rgba(255, 255, 255, 0.1)',
+  transparentBlack1: 'rgba(0, 0, 0, 0.1)',
   transparentBlack7: 'rgba(0, 0, 0, 0.7)',
 };
 export const SIZES = {
@@ -55,12 +57,7 @@ export const FONTS = {
   largeTitle: {fontFamily: 'Poppins-Black', fontSize: SIZES.largeTitle},
   h1: {fontFamily: 'Poppins-Bold', fontSize: SIZES.h1, lineHeight: 36},
   h2: {fontFamily: 'Poppins-Bold', fontSize: SIZES.h2, lineHeight: 30},
-  h3: {
-    fontFamily: 'Poppins-SemiBold',
-    fontSize: SIZES.h3,
-    lineHeight: 22,
-    fontWeight: 'bold',
-  },
+  h3: {fontFamily: 'Poppins-SemiBold', fontSize: SIZES.h3, lineHeight: 22},
   h4: {fontFamily: 'Poppins-SemiBold', fontSize: SIZES.h4, lineHeight: 22},
   h5: {fontFamily: 'Poppins-SemiBold', fontSize: SIZES.h5, lineHeight: 22},
   body1: {fontFamily: 'Poppins-Regular', fontSize: SIZES.body1, lineHeight: 36},
