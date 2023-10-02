@@ -147,7 +147,7 @@ const SignUp = ({navigation}) => {
 
         {/* Sign Up & Sign In */}
         <TextButton
-          disabled={isEnableSignUp()}
+          disabled={!isEnableSignUp()}
           label="Sign Up"
           buttonContainerStyle={{
             height: 55,
