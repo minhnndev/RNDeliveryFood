@@ -8,6 +8,7 @@ const TextIconButton = ({
   label,
   labelStyle,
   icon,
+  iconPostision = 'left',
   iconStyle,
   onPress,
 }) => {
@@ -20,6 +21,17 @@ const TextIconButton = ({
         justifyContent: 'center',
         ...containerStyle,
       }}>
+      {iconPostision === 'left' && icon && (
+        <Image
+          source={icon}
+          style={[
+            {
+              ...iconStyle,
+            },
+            styles.image,
+          ]}
+        />
+      )}
       <Text
         style={{
           ...FONTS.h3,
@@ -27,20 +39,27 @@ const TextIconButton = ({
         }}>
         {label}
       </Text>
-      <Image
-        source={icon}
-        style={{
-          marginLeft: 4,
-          width: 20,
-          height: 20,
-          tintColor: COLORS.black,
-          ...iconStyle,
-        }}
-      />
+      {iconPostision === 'right' && icon && (
+        <Image
+          source={icon}
+          style={[
+            {
+              ...iconStyle,
+            },
+            styles.image,
+          ]}
+        />
+      )}
     </TouchableOpacity>
   );
 };
 
 export default TextIconButton;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  image: {
+    marginLeft: 4,
+    width: 20,
+    height: 20,
+  },
+});

@@ -2,9 +2,17 @@ import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import {COLORS, FONTS} from '../constants';
 
-const TextButton = ({label, labelStyle, buttonContainerStyle, onPress}) => {
+const TextButton = ({
+  label,
+  labelStyle,
+  disabled,
+  buttonContainerStyle,
+  onPress,
+}) => {
   return (
-    <View
+    <TouchableOpacity
+      disabled={disabled}
+      onPress={onPress}
       style={{
         flexDirection: 'row',
         alignItems: 'center',
@@ -12,17 +20,15 @@ const TextButton = ({label, labelStyle, buttonContainerStyle, onPress}) => {
         backgroundColor: COLORS.primary,
         ...buttonContainerStyle,
       }}>
-      <TouchableOpacity onPress={onPress}>
-        <Text
-          style={{
-            marginLeft: 10,
-            ...FONTS.h3,
-            ...labelStyle,
-          }}>
-          {label}
-        </Text>
-      </TouchableOpacity>
-    </View>
+      <Text
+        style={{
+          marginLeft: 10,
+          ...FONTS.h3,
+          ...labelStyle,
+        }}>
+        {label}
+      </Text>
+    </TouchableOpacity>
   );
 };
 

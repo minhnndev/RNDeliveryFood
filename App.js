@@ -7,7 +7,7 @@ import store from './src/stores';
 import AuthStack from './src/navigation/AuthStack';
 import AppStack from './src/navigation/AppStack';
 
-const isLogin = true;
+const isLogin = false;
 
 const App = () => {
   return (

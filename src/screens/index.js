@@ -16,6 +16,7 @@ import DeliveryStatus from './Delivery/DeliveryStatus';
 import Map from './Delivery/Map';
 
 // Authentication
+import AuthLayout from './Authentication/AuthLayout';
 import OnBoarding from './OnBoarding/OnBoarding';
 import SignIn from './Authentication/SignIn';
 import SignUp from './Authentication/SignUp';
