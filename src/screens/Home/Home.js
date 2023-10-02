@@ -1,17 +1,17 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useEffect, useState} from 'react';
 import {
-  View,
-  Text,
-  Image,
-  TouchableOpacity,
   FlatList,
+  Image,
+  Text,
   TextInput,
+  TouchableOpacity,
+  View,
 } from 'react-native';
-import {SIZES, COLORS, FONTS, icons, dummyData} from '../../constants';
+import FilterModal from '../../components/FilterModal';
 import HorizontalFoodCard from '../../components/HorizontalFoodCard';
 import VerticalFoodCard from '../../components/VerticalFoodCard';
-import FilterModal from '../../components/FilterModal';
+import {COLORS, FONTS, SIZES, dummyData, icons} from '../../constants';
 
 export const Section = ({title, onPress, children}) => {
   return (

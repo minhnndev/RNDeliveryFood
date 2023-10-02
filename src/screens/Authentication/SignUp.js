@@ -1,12 +1,12 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useState} from 'react';
-import {View, Text, Image, TouchableOpacity} from 'react-native';
-import AuthLayout from './AuthLayout';
-import {COLORS, SIZES, FONTS, icons} from '../../constants';
+import {Image, Text, TouchableOpacity, View} from 'react-native';
 import FormInput from '../../components/FormInput';
-import {utils} from '../../utils';
 import TextButton from '../../components/TextButton';
 import TextIconButton from '../../components/TextIconButton';
+import {COLORS, FONTS, SIZES, icons} from '../../constants';
+import {utils} from '../../utils';
+import AuthLayout from './AuthLayout';
 
 const SignUp = ({navigation}) => {
   const [email, setEmail] = useState('');

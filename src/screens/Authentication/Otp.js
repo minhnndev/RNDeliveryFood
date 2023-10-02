@@ -1,11 +1,11 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useEffect, useState} from 'react';
-import {View, Text} from 'react-native';
+import {Text, View} from 'react-native';
 
 import OTPInputView from '@twotalltotems/react-native-otp-input';
 
-import {COLORS, SIZES, FONTS, icons} from '../../constants';
 import TextButton from '../../components/TextButton';
+import {COLORS, FONTS, SIZES} from '../../constants';
 
 import AuthLayout from './AuthLayout';
 

@@ -25,6 +25,7 @@ import Otp from './Authentication/Otp';
 
 export {
   //AuthStack,
+  AuthLayout,
   OnBoarding,
   SignIn,
   SignUp,

@@ -1,14 +1,14 @@
 /* eslint-disable react-native/no-inline-styles */
-import React, {useEffect, useState} from 'react';
-import {View, Text, Image, TouchableOpacity} from 'react-native';
+import React, {useState} from 'react';
+import {Image, Text, TouchableOpacity, View} from 'react-native';
 
-import AuthLayout from '../Authentication/AuthLayout';
-import FormInput from '../../components/FormInput';
-import {COLORS, FONTS, SIZES, icons} from '../../constants';
-import {utils} from '../../utils';
 import CustomSwitch from '../../components/CustomSwitch';
+import FormInput from '../../components/FormInput';
 import TextButton from '../../components/TextButton';
 import TextIconButton from '../../components/TextIconButton';
+import {COLORS, FONTS, SIZES, icons} from '../../constants';
+import {utils} from '../../utils';
+import AuthLayout from '../Authentication/AuthLayout';
 
 const SignIn = ({navigation}) => {
   const [email, setEmail] = useState('');

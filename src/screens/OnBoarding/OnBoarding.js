@@ -1,9 +1,9 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useRef, useState} from 'react';
-import {View, Text, Image, Animated, ImageBackground} from 'react-native';
+import {Animated, Image, ImageBackground, Text, View} from 'react-native';
 
-import {COLORS, FONTS, SIZES, constants, images} from '../../constants';
 import TextButton from '../../components/TextButton';
+import {COLORS, FONTS, SIZES, constants, images} from '../../constants';
 
 const Dots = ({scrollX}) => {
   const dotPosition = Animated.divide(scrollX, SIZES.width);

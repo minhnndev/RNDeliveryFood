@@ -1,12 +1,12 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useState} from 'react';
-import {View, Text, Image} from 'react-native';
+import {Image, View} from 'react-native';
 
-import {COLORS, SIZES, FONTS, icons} from '../../constants';
+import {COLORS, FONTS, SIZES, icons} from '../../constants';
 import AuthLayout from './AuthLayout';
 
-import TextButton from '../../components/TextButton';
 import FormInput from '../../components/FormInput';
+import TextButton from '../../components/TextButton';
 import {utils} from '../../utils';
 
 const ForgotPassword = () => {

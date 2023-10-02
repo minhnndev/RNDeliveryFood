@@ -3,7 +3,7 @@ import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 
-import {SIZES, FONTS, COLORS, images, constants} from '../../constants';
+import {COLORS, FONTS, SIZES, images} from '../../constants';
 
 const AuthLayout = ({title, subtitle, titleContainerStyle, children}) => {
   return (
